@@ -8,13 +8,13 @@
 <meta property="og:type" content="website">
 <meta property="og:title" content="Malek & Rawan — Wedding Invitation">
 <meta property="og:description" content="You are invited to our wedding · 6 Nov 2026 · 4:00 PM · Al-Mosheer Tantawy Mosque">
-<meta property="og:image" content="https://YOUR-SITE-ADDRESS/og.jpg">
+<meta property="og:image" content="https://malekmohamed.github.io/inv/og.jpg">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image" content="https://YOUR-SITE-ADDRESS/og.jpg">
+<meta name="twitter:image" content="https://malekmohamed.github.io/inv/og.jpg">
 <meta name="theme-color" content="#f4e8d4">
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600&family=Great+Vibes&family=Amiri:wght@400;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600&family=Great+Vibes&family=Amiri:wght@400;700&family=Aref+Ruqaa:wght@400;700&display=swap" rel="stylesheet">
 <style>
 :root{--gold:#9a7230;--gold2:#c9a45c;--cream:#fbf5e8;--ink:#7a5a22;color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
 *{box-sizing:inherit;margin:0;-webkit-tap-highlight-color:transparent}
@@ -69,6 +69,13 @@ html,body{height:100%;overflow:hidden;background:radial-gradient(ellipse at 50% 
 a.map{color:var(--gold);border:1px solid var(--gold2);padding:9px 20px;border-radius:30px;text-decoration:none;letter-spacing:.18em;font-size:13px;text-transform:uppercase;font-weight:600}
 #replay{position:fixed;top:calc(12px + env(safe-area-inset-top,0px));right:14px;background:none;border:0;color:var(--gold);font:inherit;font-size:13px;letter-spacing:.2em;text-transform:uppercase;cursor:pointer;z-index:6;opacity:0;pointer-events:none;transition:.5s}
 #replay.show{opacity:.8;pointer-events:auto}
+#lang{position:fixed;top:calc(12px + env(safe-area-inset-top,0px));left:14px;background:rgba(255,250,240,.6);border:1px solid var(--gold2);border-radius:20px;padding:3px 14px;color:var(--gold);font-family:'Amiri',serif;font-size:16px;cursor:pointer;z-index:6}
+html[lang=ar] body{font-family:'Amiri','Cormorant Garamond',serif}
+html[lang=ar] .cap,html[lang=ar] .hint,html[lang=ar] a.map,html[lang=ar] #replay,html[lang=ar] .env .card small,html[lang=ar] .info div{letter-spacing:0!important;text-transform:none!important}
+html[lang=ar] .cap{font-size:clamp(17px,4.8vw,21px)!important;line-height:1.9}
+html[lang=ar] .info div:nth-child(even){font-size:clamp(16px,4.6vw,20px)}
+html[lang=ar] .info{text-align:right}
+html[lang=ar] .script,html[lang=ar] .env .card span,html[lang=ar] .seal{font-family:'Aref Ruqaa','Amiri',serif;line-height:1.5}
 </style>
 </head>
 <body>
@@ -77,9 +84,9 @@ a.map{color:var(--gold);border:1px solid var(--gold2);padding:9px 20px;border-ra
 <div id="app">
   <!-- 1 envelope -->
   <section class="s on" id="s0">
-    <div class="cap r" style="--d:0">You are invited</div>
-    <div class="env" id="env"><div class="back"></div><div class="card"><span>Malek &amp; Rawan</span><small>Wedding Invitation</small></div><div class="front"></div><div class="flap"></div><div class="seal">M&amp;R</div></div>
-    <div class="hint r" style="--d:2">Tap to open</div>
+    <div class="cap r" style="--d:0" data-i18n="invited">You are invited</div>
+    <div class="env" id="env"><div class="back"></div><div class="card"><span data-i18n="couple">Malek &amp; Rawan</span><small data-i18n="wi">Wedding Invitation</small></div><div class="front"></div><div class="flap"></div><div class="seal" data-i18n="seal">M&amp;R</div></div>
+    <div class="hint r" style="--d:2" data-i18n="tap">Tap to open</div>
   </section>
 
   <!-- 2 verse -->
@@ -89,8 +96,8 @@ a.map{color:var(--gold);border:1px solid var(--gold2);padding:9px 20px;border-ra
       <div class="arab r" style="--d:0;font-size:clamp(26px,8vw,36px)">بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ</div>
       <div class="orn r" style="--d:1"><i></i><b>❖</b><i></i></div>
       <div class="arab r" style="--d:2;font-size:clamp(20px,5.6vw,26px);direction:rtl">وَمِنْ آيَاتِهِ أَنْ خَلَقَ لَكُم مِّنْ أَنفُسِكُمْ أَزْوَاجًا لِّتَسْكُنُوا إِلَيْهَا وَجَعَلَ بَيْنَكُم مَّوَدَّةً وَرَحْمَةً</div>
-      <p class="r" style="--d:3;margin-top:18px;font-size:clamp(16px,4.6vw,20px);font-style:italic;line-height:1.5;max-width:300px">“And among His signs is that He created for you mates from among yourselves, that you may find tranquility in them, and He placed between you affection and mercy.”</p>
-      <div class="cap r" style="--d:4;margin-top:14px;font-size:12px">Surah Ar-Rum · 30:21</div>
+      <p class="r" style="--d:3;margin-top:18px;font-size:clamp(16px,4.6vw,20px);font-style:italic;line-height:1.5;max-width:300px" data-i18n="verseTr">“And among His signs is that He created for you mates from among yourselves, that you may find tranquility in them, and He placed between you affection and mercy.”</p>
+      <div class="cap r" style="--d:4;margin-top:14px;font-size:12px" data-i18n="surah">Surah Ar-Rum · 30:21</div>
     </div>
   </section>
 
@@ -98,13 +105,13 @@ a.map{color:var(--gold);border:1px solid var(--gold2);padding:9px 20px;border-ra
   <section class="s" id="s2">
     <div class="frame">
       
-      <div class="cap r" style="--d:0;line-height:1.9">With the blessings of Allah<br>and the love of our families</div>
+      <div class="cap r" style="--d:0;line-height:1.9" data-i18n="blessing">With the blessings of Allah<br>and the love of our families</div>
       <div class="orn r" style="--d:1"><i></i><b>❖</b><i></i></div>
-      <div class="cap r" style="--d:2;line-height:1.9;font-size:clamp(14px,4vw,18px)">We gladly invite you<br>to celebrate our</div>
-      <div class="script r" style="--d:3;font-size:clamp(38px,11vw,52px);margin:6px 0">Wedding Day</div>
-      <div class="script r" style="--d:4;font-size:clamp(58px,17vw,84px)">Malek</div>
+      <div class="cap r" style="--d:2;line-height:1.9;font-size:clamp(14px,4vw,18px)" data-i18n="invite">We gladly invite you<br>to celebrate our</div>
+      <div class="script r" style="--d:3;font-size:clamp(38px,11vw,52px);margin:6px 0" data-i18n="wd">Wedding Day</div>
+      <div class="script r" style="--d:4;font-size:clamp(58px,17vw,84px)" data-i18n="n1">Malek</div>
       <div class="script r" style="--d:5;font-size:clamp(34px,10vw,46px);color:var(--gold2)">&amp;</div>
-      <div class="script r" style="--d:6;font-size:clamp(58px,17vw,84px)">Rawan</div>
+      <div class="script r" style="--d:6;font-size:clamp(58px,17vw,84px)" data-i18n="n2">Rawan</div>
     </div>
   </section>
 
@@ -112,21 +119,22 @@ a.map{color:var(--gold);border:1px solid var(--gold2);padding:9px 20px;border-ra
   <section class="s" id="s3">
     <div class="frame">
       
-      <div class="script r" style="--d:0;font-size:clamp(40px,12vw,56px)">Save the Date</div>
+      <div class="script r" style="--d:0;font-size:clamp(40px,12vw,56px)" data-i18n="std">Save the Date</div>
       <div class="orn r" style="--d:1"><i></i><b>♥</b><i></i></div>
       <div class="info r" style="--d:2">
-        <div class="ic">📍</div><div>Al-Mosheer Tantawy Mosque</div>
-        <div class="ic">📅</div><div>6 Nov 2026</div>
-        <div class="ic">🕓</div><div>4:00 PM</div>
+        <div class="ic">📍</div><div data-i18n="loc">Al-Mosheer Tantawy Mosque</div>
+        <div class="ic">📅</div><div data-i18n="date">6 Nov 2026</div>
+        <div class="ic">🕓</div><div data-i18n="time">4:00 PM</div>
       </div>
-      <a class="map r" style="--d:3" href="https://www.google.com/maps/search/?api=1&query=Al-Mosheer+Tantawy+Mosque+Cairo" target="_blank" rel="noopener">View location</a>
-      <p class="r" style="--d:4;margin-top:22px;font-style:italic;font-size:clamp(15px,4.2vw,18px);line-height:1.6;max-width:280px">Your presence will make our special day even more meaningful.</p>
+      <a class="map r" style="--d:3" href="https://www.google.com/maps/search/?api=1&query=Al-Mosheer+Tantawy+Mosque+Cairo" target="_blank" rel="noopener" data-i18n="map">View location</a>
+      <p class="r" style="--d:4;margin-top:22px;font-style:italic;font-size:clamp(15px,4.2vw,18px);line-height:1.6;max-width:280px" data-i18n="close">Your presence will make our special day even more meaningful.</p>
     </div>
   </section>
 </div>
 
 <div class="dots"><i class="on"></i><i></i><i></i><i></i></div>
-<button id="replay">Replay</button>
+<button id="replay" data-i18n="replay">Replay</button>
+<button id="lang" aria-label="Language">العربية</button>
 
 <script>
 (function(){
@@ -151,6 +159,52 @@ a.map{color:var(--gold);border:1px solid var(--gold2);padding:9px 20px;border-ra
     if(e.target.closest('a'))return;next();});
   rp.addEventListener('click',function(e){
     e.stopPropagation();env.classList.remove('open');show(0);});
+})();
+</script>
+<script>
+/* ===== EDIT YOUR DETAILS HERE ===== */
+window.INVITE={
+  groom:{en:'Malek',ar:'مالك'},
+  bride:{en:'Rawan',ar:'روان'},
+  location:{en:'Al-Mosheer Tantawy Mosque',ar:'مسجد المشير طنطاوي'},
+  mapUrl:'',        // optional: paste an exact Google Maps link; empty = search by location name
+  date:'2026-11-06', // YYYY-MM-DD
+  time:'16:00'       // 24-hour HH:MM
+};
+</script>
+<script>
+(function(){
+var T={en:{title:'Malek & Rawan — Wedding Invitation',invited:'You are invited',tap:'Tap to open',seal:'M&amp;R',couple:'Malek &amp; Rawan',wi:'Wedding Invitation',
+verseTr:'“And among His signs is that He created for you mates from among yourselves, that you may find tranquility in them, and He placed between you affection and mercy.”',
+surah:'Surah Ar-Rum · 30:21',blessing:'With the blessings of Allah<br>and the love of our families',invite:'We gladly invite you<br>to celebrate our',wd:'Wedding Day',n1:'Malek',n2:'Rawan',
+std:'Save the Date',loc:'Al-Mosheer Tantawy Mosque',date:'6 Nov 2026',time:'4:00 PM',map:'View location',close:'Your presence will make our special day even more meaningful.',replay:'Replay',btn:'العربية'},
+ar:{title:'ملك وروان — دعوة زفاف',invited:'أنتم مدعوّون',tap:'المس للفتح',seal:'م · ر',couple:'ملك وروان',wi:'دعوة زفاف',
+verseTr:'',surah:'سورة الروم · ٣٠:٢١',blessing:'بفضل الله ومحبّة أهلنا',invite:'يسعدنا دعوتكم<br>لمشاركتنا فرحة',wd:'يوم زفافنا',n1:'ملك',n2:'روان',
+std:'موعدنا',loc:'مسجد المشير طنطاوي',date:'٦ نوفمبر ٢٠٢٦',time:'٤:٠٠ مساءً',map:'عرض الموقع',close:'حضوركم سيجعل يومنا الخاص أجمل وأكثر معنى.',replay:'إعادة',btn:'English'}};
+var C=window.INVITE;
+(function(){
+ var d=C.date.split('-'),t=C.time.split(':'),D=new Date(+d[0],+d[1]-1,+d[2],+t[0],+t[1]);
+ ['en','ar'].forEach(function(l){var x=T[l],g=C.groom[l],b=C.bride[l];
+  x.n1=g;x.n2=b;x.loc=C.location[l];
+  x.couple=l==='ar'?g+' و'+b:g+' &amp; '+b;
+  x.seal=l==='ar'?g.charAt(0)+' · '+b.charAt(0):g.charAt(0)+'&amp;'+b.charAt(0);
+  x.title=(l==='ar'?g+' و'+b+' — دعوة زفاف':g+' & '+b+' — Wedding Invitation');
+  try{x.date=D.toLocaleDateString(l==='ar'?'ar-EG':'en-GB',{day:'numeric',month:l==='ar'?'long':'short',year:'numeric'});
+   x.time=D.toLocaleTimeString(l==='ar'?'ar-EG':'en-US',{hour:'numeric',minute:'2-digit'});}catch(e){}
+ });
+ var a=document.querySelector('a.map');
+ a.href=C.mapUrl||('https://www.google.com/maps/search/?api=1&query='+encodeURIComponent(C.location.en));
+})();
+var cur;
+function setLang(l){cur=l;var h=document.documentElement;h.lang=l;h.dir=l==='ar'?'rtl':'ltr';
+ [].forEach.call(document.querySelectorAll('[data-i18n]'),function(el){var v=T[l][el.getAttribute('data-i18n')];el.innerHTML=v;el.style.display=v===''?'none':''});
+ document.getElementById('lang').textContent=T[l].btn;document.title=T[l].title;
+ try{localStorage.setItem('lang',l)}catch(e){}}
+var q=null,st=null;try{q=new URLSearchParams(location.search).get('lang')}catch(e){}
+try{st=localStorage.getItem('lang')}catch(e){}
+var nav=(navigator.language||'en').slice(0,2).toLowerCase();
+setLang(q==='ar'||q==='en'?q:(st==='ar'||st==='en'?st:(nav==='ar'?'ar':'en')));
+document.getElementById('lang').addEventListener('click',function(e){e.stopPropagation();setLang(cur==='ar'?'en':'ar')});
 })();
 </script>
 </body>
